@@ -2,6 +2,7 @@ provider "google" {
   version = "~> 2.0"  
   project = var.project
   region  = var.region
+  credentials = var.gcp_credentials
 }
 
 resource "google_compute_network" "hashicat" {
